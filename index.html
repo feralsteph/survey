@@ -1,3 +1,5 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,140 +19,208 @@
     <title>Survey</title>
   </head>
   <body>
-    <h1 id="title">
-      Types of Pets Survey Form
-    </h1>
-    <h4 id="description">
-      Thank you for taking our survey!
-    </h4>
-    <form id="survey-form" action="">
-      <label id="name-label" for="name"
-        >Name:</label
-      >
-      <br />
-      <input
-        id="name"
-        type="text"
-        placeholder="Enter your name"
-      />
-      <br />
-      <label
-        id="email-label"
-        for="email"
-        >Email:</label
-      >
-      <br />
-      <input
-        id="email"
-        type="email"
-        placeholder="Enter your email"
-      />
-      <br />
-      <label id="number-label" for="age"
-        >Age</label
-      >
-      <br />
-      <input
-        id="number"
-        type="number"
-        min="1"
-        max="100"
-        placeholder="Age"
-      />
-      <br />
-      <label for="dropdown"
-        >Which of the following would
-        you most like as a pet?</label
-      >
-      <select
-        name="dropdown"
-        id="dropdown"
-      >
-        <option value="">
-          Please choose one of the
-          following:
-        </option>
-
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="bunny">
-          Bunny
-        </option>
-        <option value="na">
-          Hamster
-        </option>
-      </select>
-      <p>
-        Do you currently own any pets?
+    <div class="container">
+      <h1 id="title">
+        Types of Pets Survey Form
+      </h1>
+      <p id="description">
+        Thank you for taking our survey!
       </p>
-      <div>
-        <input
-          type="radio"
-          name="radio"
-          id=""
-        />
-        <label for="">Yes</label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          name="radio"
-          id=""
-        />
-        <label for="">No</label>
-      </div>
-      <div>
-        <input
-          type="radio"
-          name="radio"
-          id=""
-        />
-        <label for=""
-          >Prefer not to answer</label
+      <form id="survey-form" action="">
+        <label
+          id="name-label"
+          for="name"
+          >Name:</label
         >
-      </div>
+        <br />
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+        <br />
+        <label
+          id="email-label"
+          for="email"
+          >Email:</label
+        >
+        <br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label
+          id="number-label"
+          for="age"
+          >Age</label
+        >
+        <br />
+        <input
+          id="number"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="Age"
+        />
+        <br />
+        <label for="dropdown"
+          >Which of the following would
+          you most like as a pet?</label
+        >
 
-      <p>
-        Which animals would you care to
-        see more content about?
-      </p>
-      <div>
-        <input type="checkbox" />
-        <label for="">Ferret</label>
-      </div>
+        <select
+          name="dropdown"
+          id="dropdown"
+        >
+          <option value="">
+            Please choose one of the
+            following:
+          </option>
 
-      <div>
-        <input type="checkbox" />
-        <label for="">Guinea Pig</label>
-      </div>
+          <option value="dog">
+            Dog
+          </option>
+          <option value="cat">
+            Cat
+          </option>
+          <option value="bunny">
+            Bunny
+          </option>
+          <option value="na">
+            Hamster
+          </option>
+        </select>
+        <p>
+          Do you currently own any pets?
+        </p>
+        <div>
+          <input
+            type="radio"
+            name="radio"
+            id=""
+            value="yes"
+          />
+          <label
+            for="yes"
+            name="radio"
+            value="yes"
+            >Yes</label
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radio"
+            id=""
+            value="no"
+          />
+          <label
+            for="no"
+            name="radio"
+            value="no"
+            >No</label
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radio"
+            id=""
+            value="na"
+          />
+          <label
+            for="na"
+            name="radio"
+            value="na"
+            >Prefer not to answer</label
+          >
+        </div>
 
-      <div>
-        <input type="checkbox" />
-        <label for="">Horse</label>
-      </div>
+        <p>
+          Which animals would you care
+          to see more content about?
+        </p>
+        <div id="checkbox">
+          <div>
+            <input
+              type="checkbox"
+              value="ferret"
+            />
+            <label for="" value="ferret"
+              >Ferret</label
+            >
+          </div>
 
-      <div>
-        <input type="checkbox" />
-        <label for="">Cow</label>
-      </div>
+          <div>
+            <input
+              type="checkbox"
+              value="guineapig"
+            />
+            <label
+              for=""
+              value="guineapig"
+              >Guinea Pig</label
+            >
+          </div>
 
-      <div>
-        <input type="checkbox" />
-        <label for="">Mouse</label>
-      </div>
-      <br />
-      <textarea
-        rows="4"
-        cols="50"
-        name="comment"
-        form="usrform"
-      >
+          <div>
+            <input
+              type="checkbox"
+              value="horse"
+            />
+            <label for="" value="horse"
+              >Horse</label
+            >
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              value="cow"
+            />
+            <label for="" value="cow"
+              >Cow</label
+            >
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              value="mouse"
+            />
+            <label for="" value="mouse"
+              >Mouse</label
+            >
+          </div>
+        </div>
+        <br />
+
+        <textarea
+          rows="4"
+          cols="50"
+          name="comment"
+          form="usrform"
+        >
 Please add any comments or suggestions</textarea
-      >
-      <br />
-      <button type="submit" id="submit">
-        Submit
-      </button>
-    </form>
+        >
+        <br />
+        <button
+          type="submit"
+          id="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <footer>
+      <p>
+        <a href="">Open-source</a> code
+        by Stephanie LaRue
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,7 +1,45 @@
 body {
+  background-color: #687980;
+  color: #fff;
 }
-
 h1,
 h4 {
   text-align: center;
+}
+button {
+  margin: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+label {
+  align-items: center;
+}
+input {
+  border: none;
+  padding: 5px;
+}
+form {
+}
+input {
+  margin: 8px;
+}
+footer {
+  text-align: center;
+  font-family: monospace;
+  margin: 50px;
+}
+
+.container {
+  text-align: center;
+  background-color: #ca8a8b;
+  opacity: 60%;
+  margin: 75px 280px;
+  padding: 20px;
+  border-radius: 25px;
+}
+#dropdown {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
 }
